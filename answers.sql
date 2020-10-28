@@ -341,3 +341,17 @@ FROM order_items
 JOIN melons 
 ON (order_items.melon_id = melons.id)
 WHERE order_items.order_id = 2725;
+
+
+==========
+25
+
+-----
+
+Write a query that shows the total amount of revenue that comes from
+internet orders.
+
+-----
+
+
+SELECT SUM(order_total) FROM orders WHERE salesperson_id IS NULL;  
